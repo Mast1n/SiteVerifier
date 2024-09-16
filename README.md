@@ -50,7 +50,6 @@ pip install -r requirements.txt
 
 - **result.txt**: 包含所有 URL 的详细结果。
 - **result_200.txt**: 包含状态码为 200 的 URL 列表。
-- **result_302.txt**: 包含状态码为 302 的 URL 列表。
 - **result_403.txt**: 包含状态码为 403 的 URL 列表。
 
 所有结果文件将保存在脚本所在目录的 `./result/` 文件夹中。
