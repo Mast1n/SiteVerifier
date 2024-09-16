@@ -54,22 +54,3 @@ pip install -r requirements.txt
 - **result_403.txt**: 包含状态码为 403 的 URL 列表。
 
 所有结果文件将保存在脚本所在目录的 `./result/` 文件夹中。
-
-## 示例
-
-运行脚本后，控制台将显示类似以下内容：
-
-```
-less复制代码[*] Start working...
-[200] http://example.com  Example Domain
-[302] https://example.org  Example Domain
-ERROR https://nonexistent.example  Unable to access.
-[*] All tasks completed. Program finished.
-Total accessible sites: 2
-Please check the result file in './result'
-```
-
-## 注意事项
-
-- 该脚本使用了 `requests` 库的 `verify=False` 参数，因此在处理 HTTPS URL 时不会验证 SSL 证书。
-- 如果 URL 的 HTTP 状态码不是 200、302 或 403，则会将其标记为拒绝访问。
